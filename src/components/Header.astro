@@ -8,8 +8,15 @@
 <style>
 	nav {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		padding-block: 1.5rem;
+	}
+
+	@media (min-width: 48rem) {
+		nav {
+			flex-direction: row;
+		}
 	}
 </style>

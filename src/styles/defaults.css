@@ -7,7 +7,6 @@
   --pink: hsl(342, 92%, 62%);
   --rose: hsl(341, 100%, 83%);
   --white: hsl(0, 0%, 100%);
-  --soft-white: hsl(0, 0%, 95%);
   --mango: linear-gradient(hsl(322, 87%, 55%), hsl(13, 100%, 64%));
   --plum: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
   
@@ -24,13 +23,23 @@
   --line-height: 1.3em;
 
   --icon-width: 86px;
+  --columns: 1;
 }
 
+/* Tablet */
 @media (min-width: 48rem) {
   :root{
     --text: 1.125rem;
     --text-weight: 700;
     --icon-width: 111px;
+    --columns: 2
+  }
+}
+
+/* Desktop */
+@media (min-width: 64rem) {
+  :root{
+    --columns: 3
   }
 }
 
@@ -46,7 +55,7 @@ body {
   overflow-x: hidden;
   font-size: var(--text);
   color: var(--gray);
-  background-color: var(--soft-white);
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 50%, #F0F1FF 100%);
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: var(--text-weight);
   line-height: var(--line-height);
@@ -60,4 +69,9 @@ h1, h2, h3, h4 {
 h1 {
   font-size: var(--headline);
   line-height: var(--headline-line);
+}
+
+a {
+  text-decoration: none;
+  color: var(--pink);
 }

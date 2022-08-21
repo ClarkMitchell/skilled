@@ -1,3 +1,7 @@
+body {
+  
+}
+
 main {
   margin-bottom: auto;
 }
@@ -20,4 +24,52 @@ section[aria-labelledby="headline"] > img {
 section[aria-labelledby="headline"] p {
   max-width: 35ch;
   margin-block: 2.5rem;
+}
+
+section[aria-labelledby="courses-card"] {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  column-gap: 1.875rem;
+  row-gap: 5rem;
+  margin-bottom: 8.75rem;
+}
+
+article {
+  min-height: 21.875rem;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+}
+
+article#courses-card {
+  color: var(--white);
+  background: var(--mango);
+}
+
+article#courses-card h2 {
+  color: var(--white);
+  font-size: var(--text-m);
+  font-weight: 800;
+  line-height: var(--text-l);
+}
+
+article h2, article h3 {
+  margin-block: 1.5rem;
+}
+
+article a {
+  margin-top: auto;
+}
+
+article p {
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+
+article img {
+  width: var(--text-xl);
+  margin-top: -4rem;
 }
