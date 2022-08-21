@@ -1,13 +1,22 @@
----
-const today = new Date();
----
-
-<footer>
-	&copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
+<footer class="fw-bg">
+	<div class="constrain">
+		<a href="#" class="icon"><img src="/logo-light.svg" alt="Skilled" /></a>
+		<a href="#" class="button bg-plum">Get Started</a>
+	</div>
 </footer>
+
 <style>
 	footer {
-		padding: 25px;
-		text-align: center;
+		background-color: var(--black);
+	}
+
+	.constrain {
+		display: flex;
+		justify-content: space-between;
+		padding-block: 2rem;
+	}
+
+	.icon {
+		margin-block: auto;
 	}
 </style>

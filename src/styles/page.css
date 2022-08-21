@@ -1,0 +1,23 @@
+main {
+  margin-bottom: auto;
+}
+
+section[aria-labelledby="headline"] {
+  display: flex;
+  margin-top: 9.25rem;
+  margin-bottom: 3rem;
+  gap: 8rem;
+}
+
+section[aria-labelledby="headline"] > img {
+  align-self: center;
+  position: relative;
+  margin-right: -35rem;
+  margin-top: -39%;
+  z-index: -1;
+}
+
+section[aria-labelledby="headline"] p {
+  max-width: 35ch;
+  margin-block: 2.5rem;
+}

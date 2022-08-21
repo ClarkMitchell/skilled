@@ -1,0 +1,63 @@
+:root {
+  --margin: 1rem;
+  --max: min(69.375rem, 100% - (var(--margin) * 2));
+  --blue: hsl(234, 25%, 52%);
+  --black: hsl(233, 54%, 16%);
+  --gray: hsl(232, 10%, 34%);
+  --pink: hsl(342, 92%, 62%);
+  --rose: hsl(341, 100%, 83%);
+  --white: hsl(0, 0%, 100%);
+  --soft-white: hsl(0, 0%, 95%);
+  --mango: linear-gradient(hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+  --plum: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+  
+  --text: 1rem;
+  --text-weight: 500;
+  --text-xl: 3.5rem;
+  --text-l: 2.5rem;
+  --text-m: 2rem;
+  --text-s: 1.5rem;
+
+  --headline: clamp(var(--text-l), 2.3rem + 1vw, var(--text-xl));
+  --headline-line: clamp(3.125rem, 2.875rem + 1.25vw, 4.375rem);
+
+  --line-height: 1.3em;
+
+  --icon-width: 86px;
+}
+
+@media (min-width: 48rem) {
+  :root{
+    --text: 1.125rem;
+    --text-weight: 700;
+    --icon-width: 111px;
+  }
+}
+
+body > * {
+  width: var(--max);
+  margin-inline: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+  font-size: var(--text);
+  color: var(--gray);
+  background-color: var(--soft-white);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: var(--text-weight);
+  line-height: var(--line-height);
+}
+
+h1, h2, h3, h4 {
+  color: var(--black);
+  font-weight: 800;
+  max-width: 14ch;
+}
+h1 {
+  font-size: var(--headline);
+  line-height: var(--headline-line);
+}

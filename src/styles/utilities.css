@@ -1,0 +1,31 @@
+.fw-bg {
+  width: 100vw;
+}
+
+.fw-bg > * {
+  width: var(--max);
+  margin-inline: auto;
+}
+
+.button {
+  display: block;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  padding: 1.35em 1.5em;
+  color: var(--white);
+  background-color: var(--black);
+  line-height: 0;
+  width: fit-content;
+}
+
+.icon {
+  width: var(--icon-width);
+}
+
+.bg-plum {
+  background: var(--plum);
+}
+
+.bg-mango {
+  background: var(--mango);
+}
